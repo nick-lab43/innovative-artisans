@@ -20,3 +20,7 @@
 .skip-link{position:fixed;top:10px;left:10px;z-index:1000;padding:12px 16px;background:var(--green);color:var(--navy);font-weight:800;transform:translateY(-160%);transition:transform .18s ease}.skip-link:focus{transform:translateY(0)}
 :focus-visible{outline:3px solid #8fc64b;outline-offset:3px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* Mobile quick-contact actions */
+.mobile-contact-bar{display:none}
+@media(max-width:700px){.mobile-contact-bar{position:fixed;z-index:30;left:0;right:0;bottom:0;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:#09263df2;backdrop-filter:blur(12px);box-shadow:0 -8px 28px #071d3030}.mobile-contact-bar a{min-height:46px;display:flex;align-items:center;justify-content:center;gap:8px;font-size:12px;font-weight:800;text-decoration:none}.mobile-contact-whatsapp{background:#8fc64b;color:#09263d}.mobile-contact-call{background:#fff;color:#09263d}.floating-wa{display:none}.footer{padding-bottom:75px}}
