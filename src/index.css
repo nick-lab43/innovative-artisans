@@ -73,3 +73,16 @@
 .contact-form input,.contact-form select,.contact-form textarea{width:100%;min-width:0}
 .contact-form textarea{resize:vertical;min-height:110px}
 @media(max-width:520px){.form-two-col{grid-template-columns:1fr;gap:0}}
+
+/* Searchable service-area explorer */
+.area-panel-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.area-panel-head b{margin-left:auto;font-size:9px;letter-spacing:.12em;color:#a8d48c;border:1px solid rgba(168,212,140,.35);padding:7px 9px}
+.area-search-label{display:block;margin:25px 0 9px;color:#aabdc7;font-size:9px;font-weight:800;letter-spacing:.16em}
+.area-search{display:flex;align-items:center;gap:11px;background:#fff;padding:0 14px;min-height:49px;border:1px solid #dce6e9;color:#56717e}
+.area-search input{width:100%;min-width:0;border:0!important;outline:none!important;background:transparent!important;color:#092e45!important;padding:12px 0!important;font:500 13px inherit!important;box-shadow:none!important}
+.area-search input::placeholder{color:#8b9ba2}
+.area-search button{border:0;background:transparent;color:#637c88;padding:6px;cursor:pointer}
+.area-tags a{display:inline-flex;align-items:center;gap:5px;text-decoration:none}
+.area-tags a:hover{background:#8fc64b;color:#09263d}
+.area-empty{color:#d9e5e9;font-size:12px;padding:15px 0}
+@media(max-width:600px){.area-panel-head b{margin-left:0}}
