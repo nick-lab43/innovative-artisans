@@ -24,3 +24,17 @@
 .mobile-contact-bar{display:none}
 @media(max-width:700px){.mobile-contact-bar{position:fixed;z-index:30;left:0;right:0;bottom:0;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:#09263df2;backdrop-filter:blur(12px);box-shadow:0 -8px 28px #071d3030}.mobile-contact-bar a{min-height:46px;display:flex;align-items:center;justify-content:center;gap:8px;font-size:12px;font-weight:800;text-decoration:none}.mobile-contact-whatsapp{background:#8fc64b;color:#09263d}.mobile-contact-call{background:#fff;color:#09263d}.floating-wa{display:none}.footer{padding-bottom:75px}}
 .project-card img{display:block;content-visibility:auto}
+
+/* Accessible project photograph lightbox */
+.project-card{border:0;padding:0;text-align:left;font:inherit;cursor:zoom-in;width:100%;display:block}
+.project-title{font:800 17px Manrope;margin:7px 0;display:block;color:#fff}
+.project-view{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:700;color:#dce9d3;opacity:.9}
+.project-card:hover .project-view{color:#b6df85}
+.image-lightbox{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:28px;background:#04111ded;backdrop-filter:blur(8px)}
+.lightbox-content{width:min(920px,100%);max-height:calc(100vh - 56px);display:grid;grid-template-columns:minmax(0,1.35fr) minmax(180px,.65fr);background:#fff;box-shadow:0 24px 90px #0008}
+.lightbox-content img{width:100%;height:min(76vh,760px);object-fit:contain;background:#091d2c}
+.lightbox-content>div{align-self:end;padding:28px}
+.lightbox-content small{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#4d812f;font-weight:800}
+.lightbox-content h2{font:800 24px Manrope;color:#09263d;line-height:1.2;margin-top:10px}
+.lightbox-close{position:absolute;top:18px;right:20px;width:46px;height:46px;display:grid;place-items:center;border:1px solid #ffffff66;border-radius:50%;background:#09263d;color:#fff;cursor:pointer}
+@media(max-width:650px){.image-lightbox{padding:16px}.lightbox-content{grid-template-columns:1fr;max-height:calc(100vh - 32px);overflow:auto}.lightbox-content img{height:min(68vh,620px)}.lightbox-content>div{padding:18px 20px}.lightbox-content h2{font-size:19px}.lightbox-close{top:22px;right:22px;z-index:1}}
