@@ -24,4 +24,4 @@ npm run preview
 
 The enquiry form opens WhatsApp with a prefilled message. It does not store submissions or send email through a backend.
 
-The current service gallery uses illustrative category imagery. Replace it with the supplied business project photographs before public launch.
+The service gallery includes one supplied business photograph. Other gallery images remain illustrative service-category references, not confirmed completed projects. Add the remaining supplied project photographs before public launch.
