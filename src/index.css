@@ -64,3 +64,12 @@
 .project-card:hover img{transform:scale(1.045)}
 @media(max-width:800px){.brand-logo{width:205px;max-height:64px}.trevor-grid{grid-template-columns:1fr;gap:42px}.trevor-photo{height:460px}.trevor-photo-wrap{max-width:560px}.footer-logo{width:220px}}
 @media(max-width:520px){.brand-logo{width:178px;max-height:58px}.trevor-photo{height:390px}.gallery-filters{gap:7px}.gallery-filters button{padding:9px 11px;font-size:10px}}
+
+/* Structured enquiry form */
+.form-head>p{font-size:12px;color:var(--muted);line-height:1.6;margin-top:7px}
+.form-two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.optional-label{font-size:9px;letter-spacing:.12em;color:#75868e;font-weight:800;margin-left:5px}
+.contact-form label{min-width:0}
+.contact-form input,.contact-form select,.contact-form textarea{width:100%;min-width:0}
+.contact-form textarea{resize:vertical;min-height:110px}
+@media(max-width:520px){.form-two-col{grid-template-columns:1fr;gap:0}}
